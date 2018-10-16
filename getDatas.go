@@ -1,9 +1,7 @@
 package main
 
 import (
-	"bufio"
 	"errors"
-	"io"
 	"io/ioutil"
 	"net"
 	"net/http"
