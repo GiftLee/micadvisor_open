@@ -117,9 +117,8 @@ func getEndPoint() string {
 	 hostname, err := os.Hostname()
              if err != nil {
                LogErr(err, "gethostname err")
-             } else {
+             } 
            return hostname
-    }
 }
 
 func getDockerData(containerId string) (string, error) {
