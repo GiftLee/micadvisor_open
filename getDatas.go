@@ -116,7 +116,7 @@ func getEndPoint() string {
 	//hostname = strings.Replace(hostname, "\n", " ", -1)
 	 hostname, err := os.Hostname()
              if err != nil {
-               fmt.Printf("%s", err)
+               LogErr(err, "gethostname err")
              } else {
            return hostname
     }
